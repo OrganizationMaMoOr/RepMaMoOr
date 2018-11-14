@@ -74,6 +74,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Aufgabe.cs" />
     <Compile Include="DetailAnsicht.xaml.cs">
       <DependentUpon>DetailAnsicht.xaml</DependentUpon>
     </Compile>
