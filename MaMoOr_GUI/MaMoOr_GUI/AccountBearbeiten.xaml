@@ -10,7 +10,7 @@
         
         <Button Name="btn_ea_home" Canvas.Left="690" Canvas.Top="31" Width="24" Background="White" Click="btn_ea_home_Click">
             <StackPanel>
-                <Image Source="home_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+                <Image Source="image/home_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
             </StackPanel>
         </Button>
         

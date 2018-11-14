@@ -10,26 +10,26 @@
         
         <Button Name="btn_detail_home" Canvas.Left="750" Canvas.Top="31" Width="24" Background="White" Click="btn_detail_home_Click">
             <StackPanel>
-                <Image Source="home_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+                <Image Source="image/home_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
             </StackPanel>
         </Button>
         <Label Name="lb_detail_exerciseTitel" Content="Titel der Aufgabe" Canvas.Left="39" Canvas.Top="60" FontFamily="Microsoft PhagsPa" FontWeight="Bold" FontSize="14"/>
         <Label Name="lb_detail_downloadTasks"  Content="Aufgabenstellung herunterladen:" Canvas.Left="79" Canvas.Top="104"/>
         <Button Name="btn_detail_downloadTasks" Canvas.Left="310" Canvas.Top="104" Width="24" Background="White" Click="btn_detail_downloadTasks_Click">
             <StackPanel>
-                <Image Source="download_icon.png" Width="17" Height="17"/>
+                <Image Source="image/download_icon.png" Width="17" Height="17"/>
             </StackPanel>
         </Button>
         <Label Name="lb_detail_downloadSampleSolution" Content="Musterlösung herunterladen:" Canvas.Left="79" Canvas.Top="150"/>
         <Button Name="btn_detail_downloadSampleSolution" Canvas.Left="310" Canvas.Top="150" Width="24" Background="White" Click="btn_detail_downloadSampleSolution_Click">
             <StackPanel>
-                <Image Source="download_icon.png" Width="17" Height="17"/>
+                <Image Source="image/download_icon.png" Width="17" Height="17"/>
             </StackPanel>
         </Button>
         <Label Name="lb_detail_downloadAdditionalMaterial" Content="Zusatzmaterial herunterladen:" Canvas.Left="79" Canvas.Top="202"/>
         <Button Name="btn_detail_downloadAdditionalMaterial" Canvas.Left="311" Canvas.Top="202" Width="24" Background="White" Click="btn_detail_downloadAdditionalMaterial_Click">
             <StackPanel>
-                <Image Source="download_icon.png" Width="17" Height="17"/>
+                <Image Source="image/download_icon.png" Width="17" Height="17"/>
             </StackPanel>
         </Button>
         <Label Name="lb_detail_uploadSampleSolution" Content="Musterlösung hinzufügen:" Canvas.Left="478" Canvas.Top="150"/>

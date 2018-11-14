@@ -9,17 +9,17 @@
     <Canvas>
         <Button Name="btn_main_add" Canvas.Left="690" Canvas.Top="31" Width="24" Background="White" Click="btn_main_add_Click">
             <StackPanel>
-                <Image Source="plus_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+                <Image Source="image/plus_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
             </StackPanel>
         </Button>
         <Button Name="btn_main_search" Canvas.Left="720" Canvas.Top="31" Width="24" Background="White" Click="btn_main_search_Click">
             <StackPanel>
-                <Image Source="lupe_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+                <Image Source="image/lupe_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
             </StackPanel>
         </Button>
         <Button  Name="btn_main_user" Canvas.Left="750" Canvas.Top="31" Width="24" Background="White" Click="btn_main_user_Click">
             <StackPanel>
-                <Image Source="user_icon.jpg" Width="17" Height="17"/>
+                <Image Source="image/user_icon.jpg" Width="17" Height="17"/>
             </StackPanel>
         </Button>
         <ListBox Name="list_main_exercises" Height="332" Canvas.Left="64" Canvas.Top="65" Width="468">
