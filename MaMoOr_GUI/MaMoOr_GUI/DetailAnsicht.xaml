@@ -1,0 +1,48 @@
+﻿<Window x:Class="MaMoOr_GUI.DetailAnsicht"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaMoOr_GUI"
+        mc:Ignorable="d"
+        Title="MaMoOr" Height="450" Width="800">
+    <Canvas>
+        
+        <Button Name="btn_detail_home" Canvas.Left="750" Canvas.Top="31" Width="24" Background="White" Click="btn_detail_home_Click">
+            <StackPanel>
+                <Image Source="home_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_detail_exerciseTitel" Content="Titel der Aufgabe" Canvas.Left="39" Canvas.Top="60" FontFamily="Microsoft PhagsPa" FontWeight="Bold" FontSize="14"/>
+        <Label Name="lb_detail_downloadTasks"  Content="Aufgabenstellung herunterladen:" Canvas.Left="79" Canvas.Top="104"/>
+        <Button Name="btn_detail_downloadTasks" Canvas.Left="310" Canvas.Top="104" Width="24" Background="White" Click="btn_detail_downloadTasks_Click">
+            <StackPanel>
+                <Image Source="download_icon.png" Width="17" Height="17"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_detail_downloadSampleSolution" Content="Musterlösung herunterladen:" Canvas.Left="79" Canvas.Top="150"/>
+        <Button Name="btn_detail_downloadSampleSolution" Canvas.Left="310" Canvas.Top="150" Width="24" Background="White" Click="btn_detail_downloadSampleSolution_Click">
+            <StackPanel>
+                <Image Source="download_icon.png" Width="17" Height="17"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_detail_downloadAdditionalMaterial" Content="Zusatzmaterial herunterladen:" Canvas.Left="79" Canvas.Top="202"/>
+        <Button Name="btn_detail_downloadAdditionalMaterial" Canvas.Left="311" Canvas.Top="202" Width="24" Background="White" Click="btn_detail_downloadAdditionalMaterial_Click">
+            <StackPanel>
+                <Image Source="download_icon.png" Width="17" Height="17"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_detail_uploadSampleSolution" Content="Musterlösung hinzufügen:" Canvas.Left="478" Canvas.Top="150"/>
+        <Button Name="btn_detail_uploadSampleSolution" Canvas.Left="670" Canvas.Top="150" Width="24" Background="White" Click="btn_detail_uploadSampleSolution_Click">
+            <StackPanel>
+                <Image Source="upload_icon.png" Width="17" Height="17"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_detail_uploadAdditionalMaterial" Content="Zusatzmaterial hinzufügen" Canvas.Left="478" Canvas.Top="202"/>
+        <Button Name="btn_detail_uploadAdditionalMaterial" Canvas.Left="669" Canvas.Top="208" Width="24" Background="White" Click="btn_detail_uploadAdditionalMaterial_Click">
+            <StackPanel>
+                <Image Source="upload_icon.png" Width="17" Height="17"/>
+            </StackPanel>
+        </Button>
+    </Canvas>
+</Window>

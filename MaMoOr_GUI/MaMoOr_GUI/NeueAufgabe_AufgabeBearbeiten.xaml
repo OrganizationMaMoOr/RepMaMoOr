@@ -1,0 +1,67 @@
+﻿<Window x:Class="MaMoOr_GUI.NewExercise"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MaMoOr_GUI"
+        mc:Ignorable="d"
+        Title="MaMoOr" Height="450" Width="800">
+    <Canvas>
+        
+        <Button Name="btn_ne_home" Canvas.Left="750" Canvas.Top="31" Width="24" Background="White" Click="btn_ne_home_Click">
+            <StackPanel>
+                <Image Source="home_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+            </StackPanel>
+        </Button>
+        <Button  Name="btn_ne_user" Canvas.Left="720" Canvas.Top="31" Width="24" Background="White" Click="btn_ne_user_Click">
+            <StackPanel>
+                <Image Source="user_icon.jpg" Width="17" Height="17"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_ne_newExercrise" Content="Neue Aufgabe erstellen:" Canvas.Left="10" Canvas.Top="31" Width="164" FontFamily="Microsoft PhagsPa" FontWeight="Bold" FontSize="14"/>
+        <Label Name="lb_ne_titel" Content="Titel:" Canvas.Left="39" Canvas.Top="76"/>
+        <TextBox Name="tb_ne_titel" Height="23" Canvas.Left="151" TextWrapping="Wrap" Text="TextBox" Canvas.Top="79" Width="120" KeyUp="tb_ne_titel_KeyUp"/>
+        <Label Name="lb_description" Content="Kurzbeschreibung:" Canvas.Left="39" Canvas.Top="120"/>
+        <TextBox Name="tb_description" Height="23" Canvas.Left="151" TextWrapping="Wrap" Text="TextBox" Canvas.Top="123" Width="120" KeyUp="tb_description_KeyUp"/>
+        <Label Name="lb_ne_year" Content="Jahrgang:" Canvas.Left="39" Canvas.Top="166"/>
+        <ComboBox Name="cb_ne_year" Canvas.Left="151" Canvas.Top="170" Width="120" SelectionChanged="cb_ne_year_SelectionChanged"/>
+        <Label Name="lb_ne_level" Content="Level:" Canvas.Left="39" Canvas.Top="218"/>
+        <ComboBox  Name="cb_ne_level" Canvas.Left="151" Canvas.Top="218" Width="120" SelectionChanged="cb_ne_level_SelectionChanged"/>
+        <Label Name="lb_ne_tag" Content="Tag:" Canvas.Left="39" Canvas.Top="265"/>
+        <ComboBox Name="cb_ne_tag" Canvas.Left="151" Canvas.Top="265" Width="120" SelectionChanged="cb_ne_tag_SelectionChanged"/>
+        <Label Name="lb_ne_author" Content="Autor:" Canvas.Left="39" Canvas.Top="347"/>
+        <Label Name="lb_ne_authorName" Content="twelsch" Canvas.Left="151" Canvas.Top="347" Width="120"/>
+        <Label Name="lb_ne_date" Content="Erstellungsdatum:" Canvas.Left="39" Canvas.Top="308"/>
+        <Label Name="lb_ne_currentDate" Content="17.10.2018" Canvas.Left="151" Canvas.Top="308"/>
+        <Label Name="lb_ne_task" Content="Aufgabenstellung:" Canvas.Left="362" Canvas.Top="76"/>
+        <Button Name="btn_ne_uploadTask" Canvas.Left="486" Canvas.Top="76" Width="30" Click="btn_ne_uploadTask_Click">
+            <StackPanel>
+                <Image Source="upload_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+            </StackPanel>
+        </Button>
+        <RichTextBox Name="rtb_ne_writeTask" Height="119" Canvas.Left="395" Canvas.Top="102" Width="327" KeyUp="rtb_ne_writeTask_KeyUp">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Name="lb_ne_additionalMaterial" Content="Zusatzmaterial:" Canvas.Left="362" Canvas.Top="247"/>
+        <Button Name="btn_ne_uploadAdditionalMaterial" Canvas.Left="468" Canvas.Top="247" Width="30" Click="btn_ne_uploadAdditionalMaterial_Click">
+            <StackPanel>
+                <Image Source="upload_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_ne_sampleSolution" Content="Musterlösung:" Canvas.Left="362" Canvas.Top="290"/>
+
+        <Button Name="btn_ne_sampleSolution" Canvas.Left="468" Canvas.Top="293" Width="30" Click="btn_ne_sampleSolution_Click">
+            <StackPanel>
+                <Image Source="upload_icon.png" Width="17" Height="17" RenderTransformOrigin="2.747,0.506"/>
+            </StackPanel>
+        </Button>
+        <Label Name="lb_ne_visible" Content="Sichtbar:" Canvas.Left="362" Canvas.Top="329"/>
+        <CheckBox Name="lb_ne_notVisible" Content="Nicht Sichtbar" Canvas.Left="452" Canvas.Top="335" RenderTransformOrigin="0.525,-0.48" Checked="lb_ne_notVisible_Checked"/>
+        <Button Name="btn_ne_save" Content="Speichern" Canvas.Left="602" Canvas.Top="373" Width="75" Click="btn_ne_save_Click"/>
+        <Button Name="btn_ne_cancel" Content="Abbrechen" Canvas.Left="696" Canvas.Top="373" Width="75" Click="btn_ne_cancel_Click"/>
+    </Canvas>
+</Window>
